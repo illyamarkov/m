@@ -29,6 +29,74 @@ html, body {
     left: 20%;
     top: 40%;
   }
+
+  #window4 {
+    width: 400px;
+  }
+
+  #window4 .content {
+    text-align: justify;
+    max-height: 300px;
+    max-width: 500px;
+    overflow-y: auto;
+  }
+
+  #window4 .toolbar {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  #window4 .item {
+    background-color: #4d4d4d;
+    background-image: linear-gradient(to bottom, #a5a5a5, #868686);
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border: 1px solid #000;
+    border-radius: 2px;
+    box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.5), inset -1px -1px 0 rgba(0, 0, 0, 0.5), 2px 2px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+
+  #window4 .item:hover {
+    background-color: #c0c0c0;
+    background-image: linear-gradient(to bottom, #e8e8e8, #868686);
+  }
+
+  #window4 .item:active {
+    /* ... */
+    background-image: linear-gradient(to bottom, #262626, #868686);
+  }
+
+  .window ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  
+  .window ::-webkit-scrollbar-thumb {
+    background-color: #b3b3b3;
+    box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.5), inset -1px -1px 0 rgba(0, 0, 0, 0.5), 2px 2px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 0px;
+  }
+  
+  .window ::-webkit-scrollbar-track {
+    background-color: #5e5e5e;
+    border: 2px solid #808080;
+    border-radius: 0px;
+  }
+  
+  .window ::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(0, 0%, 76%);
+  }
+  .window ::-webkit-scrollbar-thumb:active {
+    background-color: #282828;
+  }
+  
+  .window ::-webkit-scrollbar-corner {
+    background-color: #f0f0f0;
+    border: 2px solid #808080;
+    border-radius: 0px;
+  }
   
   .title-bar {
     display: flex;
