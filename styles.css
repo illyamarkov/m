@@ -40,12 +40,12 @@ html, body {
 
   #window5 {
     left: 60%;
-    top: 80%;
+    top: 70%;
     width: 300px;
   }
 
   #window4 .content {
-    text-align: justify;
+    text-align: center;
     max-height: 300px;
     max-width: 500px;
     overflow-y: auto;
