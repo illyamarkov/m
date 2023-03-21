@@ -82,12 +82,12 @@ windows.forEach((window) => {
   // Add event listener for click on the close button
   closeButton.addEventListener('click', () => {
     // Remove the window from the DOM
-    if (getRandomInt(5) === 1) {
+    if (getRandomInt(5) === 1 && window.id === "window1") {
         windows.forEach((window) =>{
-            if (window.id === "window3") {
-                window.querySelector("p").textContent = "UH OH! You should NOT have done that!!!";
-                window.querySelector('.close-button').textContent = "UH OH!"
-            }
+          if (window.id === "window3") {
+              window.querySelector("p").textContent = "UH OH! You should NOT have done that!!!";
+              window.querySelector('.close-button').textContent = "UH OH!"
+          }
         });
     }
     window.remove();
