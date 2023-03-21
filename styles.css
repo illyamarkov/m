@@ -78,6 +78,14 @@ html, body {
     background-image: linear-gradient(to bottom, #e8e8e8, #868686);
   }
 
+  #window4 #copy-email-btn {
+    margin-bottom: 10px;
+  }
+
+  #window4 #copy-email-btn {
+    color: #fff;
+  }
+
   #window4 .item:active {
     /* ... */
     background-image: linear-gradient(to bottom, #262626, #868686);
@@ -293,5 +301,31 @@ html, body {
     }
     100% {
       transform: translateY(100vh);
+    }
+  }
+
+  .shake {
+    animation: shake 0.5s;
+  }
+
+  :root {
+    --val: 5px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translateX(var(--val));
+    }
+    
+    20%, 80% {
+      transform: translateX(-(var(--val)));
+    }
+  
+    30%, 50%, 70% {
+      transform: translateX(var(--val));
+    }
+  
+    40%, 60% {
+      transform: translateX(-(var(--val)));
     }
   }
