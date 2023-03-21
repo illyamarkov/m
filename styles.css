@@ -38,6 +38,11 @@ html, body {
     width: 400px;
   }
 
+  #window4 .mcoreLogo {
+    width: 40px; /* set the width */
+    height: 40px; /* set the height */
+  }
+
   #window5 {
     left: 60%;
     top: 70%;
