@@ -91,6 +91,76 @@
   </div>
 </div>
 
+<div class="window" id="window6">
+  <div class="title-bar">
+    <span class="title">ACHIEVEMENTS</span>
+    <button class="close-button">&times;</button>
+  </div>
+  <div class="content">
+    <h3>Achievement Memory System</h3>
+    <div class="achievement-row">
+      <img class="achievement" id="achievement1" src="src/free.svg">
+    </div>
+    <div class="achievement-row">
+        <img class="achievement" id="achievement2" src="src/3!.svg">
+    </div>
+    <div class="achievement-row">
+        <img class="achievement" id="achievement3" src="src/12!.svg">
+    </div>
+  <script>
+    function saveAchievements() {
+        var achievements = {};
+        document.querySelectorAll('.achievement').forEach(function(div) {
+            achievements[div.id] = div.classList.contains('active');
+        });
+        document.cookie = "achievements=" + JSON.stringify(achievements);
+    }
+
+    function getCookie(name) {
+        var cookies = document.cookie.split('; ');
+        for (var i = 0; i < cookies.length; i++) {
+            var parts = cookies[i].split('=');
+            if (parts[0] === name) {
+                return decodeURIComponent(parts[1]);
+            }
+        }
+    }
+
+    function loadAchievements() {
+    var achievements = {};
+    var cookies = document.cookie.split('; ');
+    for (var i = 0; i < cookies.length; i++) {
+        var parts = cookies[i].split('=');
+        if (parts[0] === 'achievements') {
+            achievements = JSON.parse(parts[1]);
+        }
+    }
+    for (var id in achievements) {
+        var div = document.getElementById(id);
+        if (div) {
+            if (achievements[id]) {
+                div.classList.add('active');
+            } else {
+                div.classList.remove('active');
+            }
+        }
+    }
+}
+
+    function toggleAchievement(element) {
+        if (!element.classList.contains('active')){
+          element.classList.toggle('active');
+          saveAchievements();
+          loadAchievements();
+        }
+    }
+
+    window.addEventListener('load', loadAchievements);
+    window.addEventListener('beforeunload', saveAchievements);
+  </script>
+  </div>
+</div>
+
 <!-- END -->
 
 <div class="line"></div>

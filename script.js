@@ -104,6 +104,7 @@ interactButton.addEventListener('click', () => {
   let rnum = getRandomInt(10001);
 
   if (rnum === 1) {
+    toggleAchievement(document.getElementById('achievement3'));
     interactButton.closest('.window').querySelector('img').src = "src/!!!!!!!!!!!!.png";
     interactButton.closest('.window').querySelector('.title').textContent = "!!!!!!!!!!!!";
     interactButton.textContent = "!!!!!!!!!!!!";
@@ -111,6 +112,7 @@ interactButton.addEventListener('click', () => {
   }
 
   else if (rnum < 10){
+    toggleAchievement(document.getElementById('achievement2'));
     interactButton.closest('.window').querySelector('img').src = "src/!!!.png";
     interactButton.closest('.window').querySelector('.title').textContent = "!!!";
     interactButton.textContent = "!!!";
@@ -118,6 +120,7 @@ interactButton.addEventListener('click', () => {
   }
 
   else if (rnum < 100){
+    toggleAchievement(document.getElementById('achievement1'));
     interactButton.closest('.window').querySelector('img').src = "src/FREEDOM.png";
     interactButton.closest('.window').querySelector('.title').textContent = "?!";
     interactButton.textContent = "?!";

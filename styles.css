@@ -38,15 +38,32 @@ html, body {
     width: 400px;
   }
 
+  #window6 .content {
+    text-align: center;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+
+  .achievement-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
   #window4 .mcoreLogo {
     width: 40px; /* set the width */
     height: 40px; /* set the height */
   }
 
   #window5 {
-    left: 60%;
+    left: 80%;
     top: 60%;
     width: 300px;
+  }
+
+  #window6 {
+    left: 30%;
+    top: 80%;
   }
 
   #window4 .content {
@@ -54,6 +71,17 @@ html, body {
     max-height: 300px;
     max-width: 500px;
     overflow-y: auto;
+  }
+
+  img.achievement {
+    filter: grayscale(100%);
+    max-width: 200px;
+    max-height: 200px;
+    margin: 10px;
+  }
+
+  img.achievement.active {
+    filter: none;
   }
 
   #window4 .toolbar {
