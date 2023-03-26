@@ -2,6 +2,7 @@ const aboutButton = document.getElementById('about');
 const contactButton = document.getElementById('contact');
 const homeButton = document.getElementById('home');
 const content = document.getElementById('mainContent');
+const title = document.getElementById('mainTitle');
 
 const tempC = content.innerHTML;
 
@@ -135,6 +136,7 @@ function numToText(num){
 }
 
 aboutButton.addEventListener('click', function() {
+	title.textContent = "ABOUT"
   content.innerHTML = `
     <h1>About Us</h1>
     <p>We are a team of developers dedicated to creating innovative software solutions.</p>
@@ -142,6 +144,7 @@ aboutButton.addEventListener('click', function() {
 });
 
 contactButton.addEventListener('click', function() {
+	title.textContent = "CONTACT"
   content.innerHTML = `
   <h1>Contact Us</h1>
   <p>Get in touch with us to discuss your project or to ask any questions you may have.</p>
@@ -211,7 +214,7 @@ copyEmailBtn.addEventListener('click', () => {
 });
 
 homeButton.addEventListener('click', function() {
-
+	title.textContent = "HOME"
     content.innerHTML = tempC;
   });
 
