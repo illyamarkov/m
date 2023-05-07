@@ -1,2 +1,2 @@
 # Sauce for Manicore Interactive static homepage :)
-# Nik Was here (sexily)
+# So how do I fix this
