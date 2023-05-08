@@ -24,6 +24,11 @@ html, body {
     font-family: 'Courier New', Courier, monospace;
   }
 
+  #window0 {
+    left: 10%;
+    top: 80%
+  }
+
   #window1 {
     left: 80%;
     top: 20%;
