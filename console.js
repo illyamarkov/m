@@ -91,7 +91,7 @@ inputEl.disabled = false;
 
 // Start loading process
 async function startLoading() {
-  await txt('ESTABLISHED CUM...', 20);
+  await txt('ESTABLISHED COM...', 20); // nice try zak ;)
   var loginDate = 'Last login: ';
   loginDate += randomDate(new Date('1989-01-01'), new Date('2012-12-30')).toString();
   await txt(loginDate, 20);
