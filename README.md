@@ -9,4 +9,5 @@ Our team is composed of dedicated professionals who are passionate about softwar
 ## Contact Us
 
 If you have any questions or would like to learn more, please do not hesitate to contact us: contact@manticoreinteractive.com
-Enjoy!
+
+Enjoy the changes!
